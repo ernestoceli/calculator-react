@@ -1,6 +1,6 @@
 .App {
   width: 240px;
-  height: 380px;
+  height: 430px;
   color: white;
   background-color: rgb(48, 48, 48);
   border-radius: 20px;
@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 .row {
@@ -20,17 +21,35 @@
 
 .screen {
   width: 200px;
-  height: 50px;
+  height: 100px;
   border-style: solid;
   border-radius: 10px;
   border-color: rgb(255, 255, 255);
   border-width: 1px;
-  color:rgb(32, 32, 32);
+  color: rgb(32, 32, 32);
+  display: flex;
+  flex-direction: column;
   text-align: right;
   position: relative;
-  justify-content: right;
+  justify-content: center;
   margin: 5px auto;
-  font-size: 30px;
+  font-size: 40px;
   background: white;
   padding-right: 10px;
+  overflow: hidden;
+}
+
+.display-operation {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  color: rgb(119, 119, 119);
+  opacity: 0.8;
+}
+
+.display-current {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 5px;
 }

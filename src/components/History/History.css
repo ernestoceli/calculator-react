@@ -1,0 +1,36 @@
+.history-list {
+  width: 240px;
+  height: 0px;
+  position: absolute;
+  background-color: rgb(48, 48, 48);
+  /* background-color: red; */
+  z-index: 10;
+  border-radius: 20px;
+  bottom: 260px;
+  transition-property: height;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transition-delay: 50ms;
+}
+
+.exit-button {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.history-icon {
+  position: absolute;
+  top: 60px;
+  left: 43.5%;
+  cursor: pointer;
+  color: white;
+  z-index: 15;
+}
+
+.history-icon:focus ~ .history-list {
+  height: 310px;
+}
