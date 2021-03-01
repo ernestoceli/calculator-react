@@ -8,18 +8,12 @@
   border-radius: 20px;
   bottom: 260px;
   transition-property: height;
-  transition-duration: 200ms;
+  transition-duration: 300ms;
   transition-timing-function: linear;
   transition-delay: 50ms;
-}
-
-.exit-button {
-  position: absolute;
-  top: -10px;
-  right: 15px;
-  font-size: 18px;
-  font-weight: 900;
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 
 .history-icon {
@@ -33,4 +27,15 @@
 
 .history-icon:focus ~ .history-list {
   height: 310px;
+}
+
+.history-icon:focus ~ .history-list p {
+  visibility: visible;
+}
+
+.history-list p {
+  color: rgb(201, 201, 201);
+  right: 20px;
+  margin-left: 20px;
+  visibility: hidden;
 }

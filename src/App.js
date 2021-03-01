@@ -110,7 +110,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <History />
+      <History historyList={history} />
       <div className='screen'>
         <p className='display-operation'>{displayOperation}</p>
         <p className='display-current'>{displayValue}</p>

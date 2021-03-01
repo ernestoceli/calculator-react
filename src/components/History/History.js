@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import { Item } from "../Item/Item.js";
 import "./History.css";
 
-export const History = () => {
+export const History = ({ historyList }) => {
   return (
     <>
       <a className='history-icon' href='#'>
@@ -12,7 +13,13 @@ export const History = () => {
         />
       </a>
       <div className='history-list'>
-        <p className='exit-button'>×</p>
+        {historyList.length > 0 ? (
+          historyList.map((op) => {
+            return <Item one={op.op1} two={op.op2} res={op.result} />;
+          })
+        ) : (
+          <p>Nothing to show yet</p>
+        )}
       </div>
     </>
   );
